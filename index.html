@@ -9,7 +9,7 @@
         /* Base Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #FAFAFA;
+            background-color: #FAFAFA; /* Ultra light background */
             color: #333;
             margin: 0;
             padding: 0;
@@ -43,7 +43,7 @@
             margin-bottom: 25px;
             border: 6px solid #FF5733; 
             transition: transform 0.4s ease-out;
-            margin-top: 20px; /* FIX: Pushes the image down slightly for better centering */
+            margin-top: 20px; /* Fix: Pushes the image down slightly for better centering */
         }
         .profile-pic:hover {
             transform: scale(1.05);
@@ -79,7 +79,7 @@
             margin-top: 5px;
         }
 
-        /* Contact Buttons (with Gradients) */
+        /* Contact Buttons (with Gradients and Icon) */
         .action-buttons a {
             display: inline-block;
             padding: 14px 40px;
@@ -168,4 +168,69 @@
             <img src="IMG_0257.jpeg" alt="Karan Mishra Profile" class="profile-pic">
             <h1>Karan Mishra</h1>
             <h3>Content Strategist | Video Editor | Emerging Tech Enthusiast</h3>
-            <p>I am a final-year
+            <p>I am a final-year B.Tech student specializing in **AI & ML**, applying a data-driven approach to creative content creation and post-production workflows.</p>
+        </div>
+
+        <div class="section contact-info">
+            <h2>Connect & Contact</h2>
+            <p><strong>Mobile:</strong> +91 70299 91661</p>
+            <p><strong>Email:</strong> karanmishra04102003@gmail.com</p>
+            
+            <div class="action-buttons">
+                <a href="https://wa.me/917029991661?text=Hello%20Karan,%20I%20saw%20your%20professional%20portfolio%20on%20GitHub." 
+                   class="whatsapp-button" 
+                   target="_blank"
+                   title="Connect on WhatsApp">
+                    &#x25d8; </a>
+                
+                <a href="#featured-work" class="work-button">
+                    View Featured Work
+                </a>
+            </div>
+        </div>
+
+        <div class="section" id="featured-work">
+            <h2>Creative Portfolio Showcase</h2>
+
+            <div class="work-item">
+                <div class="work-item-content">
+                    <h4>On-Camera Delivery</h4>
+                    <p>Demonstrates confident presentation, clear communication, and fluent delivery.</p>
+                </div>
+                <a href="https://youtu.be/6m0QUzVhv3Q" target="_blank" class="work-item-link">Watch Clip</a>
+            </div>
+
+            <div class="work-item">
+                <div class="work-item-content">
+                    <h4>Video Editing & Pacing</h4>
+                    <p>Focus on dynamic cutting, visual flow, and editing techniques for high viewer engagement.</p>
+                </div>
+                <a href="https://youtube.com/watch?v=lw1En466drE" target="_blank" class="work-item-link">Watch Clip</a>
+            </div>
+
+            <h4 style="margin-top: 30px; color: #FF5733;">Featured: Sound Design & Mixing (Video Embed)</h4>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/FCc8xHQwYrs" allowfullscreen></iframe>
+                <p>This clip demonstrates my skill in **Advanced Audio Post-Production and Strategic Sound Mixing**.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education & Experience</h2>
+            <p><strong>B.Tech in Computer Science (AI & ML)</strong><br>
+               Sikkim Manipal Institute of Technology (SMIT) - Expected: 2026
+            </p>
+            <p><strong>Role:</strong> Co-Founder & Content Lead at Guff. Podcasts / Artevia Studio (2025 - Present)</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; <span id="current-year"></span> Karan Mishra Portfolio | Hosted on GitHub Pages.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
